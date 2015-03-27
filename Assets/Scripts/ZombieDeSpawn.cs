@@ -6,12 +6,6 @@ public class ZombieDeSpawn : MonoBehaviour {
 	private static int prob = (int)(ZombieConstants.p * 100); //this will be the a number between 0 and 100 for random generator
 	private enum corner {topLeft, topRight, bottomRight, bottomLeft, none};
 
-
-	public ModernZombie modernPrefab;
-	public ClassicZombie classicPrefab;
-	public PhoneZombie phonePrefab;
-	public ShamblerZombie shamblerPrefab;
-
 	// Use this for initialization
 	void Start () {
 		prob = (int)(ZombieConstants.p * 100);
@@ -23,6 +17,8 @@ public class ZombieDeSpawn : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	//I SHOULDN'T USE STATIC CLASSES IN UNITY... OOPS! WILL START TO GET UGLY
 	public static void TryDespawn(GameObject zombie)
 	{
 		//Debug.Log("TryDespawnCalled");
@@ -36,26 +32,28 @@ public class ZombieDeSpawn : MonoBehaviour {
 			float x = zombie.transform.position.x;
 			float z = zombie.transform.position.z;
 
-			if( x > 3.4 && x < 6.6 && z < 19.6 && z > 16.4)
+			if( x > 3.2 && x < 6.8 && z < 19.8 && z > 16.8)
 			{
 				corner = "tl";
 			}
-			else if ( x > 3.4 && x < 6.6 && z > 1.4 && z > 3.6)
+			else if ( x > 3.2 && x < 6.8 && z > 1.2 && z < 3.8)
 			{
 				corner = "bl";
 			}
-			else if ( x > 31.4 && x < 33.6 && z > 1.4 && z > 3.6)
+			else if ( x > 31.2 && x < 33.8 && z > 1.2 && z < 3.8)
 			{
 				corner = "br";
 			}	
-			else if ( x > 31.4 && x < 33.6 && z < 19.6 && z > 16.4)
+			else if ( x > 31.2 && x < 33.8 && z < 19.6 && z > 16.2)
 			{
 				corner = "tr";
 			}
 			
+			Debug.Log (x + ", " + z + " and the corner was: " + corner);
 			//Debug.Log ("Gone!");
 			Destroy (zombie); //despawn the zombie...
-			ZombieSpawn.TrySpawn (corner);
+			
+			GameObject.Find("ZombieEngine").GetComponent<ZombieSpawn>().TrySpawn (corner);
 			
 		}
 	}

@@ -463,7 +463,7 @@ public class ModernZombie : MonoBehaviour {
 					aSpeed = modernScript.aSpeed;
 					hitFrontZombie = true;
 					RandomlyChangeLanes();
-					Debug.Log ("BADD");
+					//Debug.Log ("BADD");
 				}
 
 
