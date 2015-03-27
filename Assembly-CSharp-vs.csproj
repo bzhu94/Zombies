@@ -49,6 +49,7 @@
      <Compile Include="Assets\OldStuff\TurnScrapts.cs" />
      <Compile Include="Assets\Scripts\ClassicZombie.cs" />
      <Compile Include="Assets\Scripts\CornerTurn.cs" />
+     <Compile Include="Assets\Scripts\DetectSurvivor.cs" />
      <Compile Include="Assets\Scripts\ModernZombie.cs" />
      <Compile Include="Assets\Scripts\PhoneZombie.cs" />
      <Compile Include="Assets\Scripts\PlayerBehavior.cs" />

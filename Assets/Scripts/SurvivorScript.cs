@@ -28,7 +28,6 @@ public class SurvivorScript : MonoBehaviour {
 		{
 			coinCount++;
 			other.gameObject.SetActive(false);
-			Debug.Log ("Coin destroyed");
 			
 		}
 	}
@@ -65,13 +64,12 @@ public class SurvivorScript : MonoBehaviour {
 				Vector3 dist = (z.transform.position - transform.position);
 				RaycastHit hit;
 				Ray r = new Ray (transform.position, dir);
-				//Debug.DrawRay (transform.position, dir, Color.black);
+				Debug.DrawRay (transform.position, dir, Color.black);
 
 				if(Physics.Raycast(r, out hit, dist.magnitude)) //so visible
 				{
 					if(hit.collider.gameObject == z)
 					{
-						Debug.Log ("true!");
 						//z.transform.GetComponent(Halo).enabled = true;
 						z.GetComponent<Light>().enabled = true;
 					}

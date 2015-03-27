@@ -7,6 +7,8 @@ public class ZombieInit : MonoBehaviour {
 	public ClassicZombie classicPrefab;
 	public ShamblerZombie shamblerPrefab;
 
+	public DetectSurvivor detectPrefab;
+
 	// Use this for initialization
 	void Start () {
 		ZombieInitialize(ZombieConstants.n);	
@@ -74,6 +76,11 @@ public class ZombieInit : MonoBehaviour {
 				else if (inside) s.aLane = ShamblerZombie.lane.inside;
 
 				s.transform.parent = GameObject.Find ("GeneratedZombies").transform;
+
+				
+				DetectSurvivor detect = Instantiate(detectPrefab) as DetectSurvivor;
+				detect.zombieTransform = s.transform;
+				detect.transform.parent = GameObject.Find ("Detectors").transform;
 				
 			
 			}
@@ -89,6 +96,10 @@ public class ZombieInit : MonoBehaviour {
 				else if (inside) classic.aLane = ClassicZombie.lane.inside;
 
 				classic.transform.parent = GameObject.Find ("GeneratedZombies").transform;
+
+				DetectSurvivor detect = Instantiate(detectPrefab) as DetectSurvivor;
+				detect.zombieTransform = classic.transform;
+				detect.transform.parent = GameObject.Find ("Detectors").transform;
 				
 			}
 		}

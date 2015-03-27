@@ -4,8 +4,8 @@ using System.Collections;
 public class ZombieConstants : MonoBehaviour {
 
 	
-	public static float v = 3; //velocity
-	public static int n = 2; //number of zombies
+	public static float v = 7; //velocity
+	public static int n = 7; //number of zombies
 	public static float p = .5f; //probability of despawning when hits a despawning point
 	public static float r = .3f; //probability of selecting a HARD zombie
 

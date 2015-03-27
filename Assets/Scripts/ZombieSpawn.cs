@@ -10,6 +10,8 @@ public class ZombieSpawn : MonoBehaviour {
 	public  GameObject phonePrefab;
 	public  GameObject shamblerPrefab;
 
+	public DetectSurvivor detectPrefab;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -38,6 +40,8 @@ public class ZombieSpawn : MonoBehaviour {
 		ClassicZombie classic = null;
 		ShamblerZombie shambler = null;
 	
+		DetectSurvivor detect = null;
+
 		if(rand < hardRatio) //instantiate a hard zombie (50 % a phone zombie)
 		{
 			int isPhone = Random.Range (0, 2);
@@ -46,6 +50,7 @@ public class ZombieSpawn : MonoBehaviour {
 				zombieSpawn = Instantiate(phonePrefab) as GameObject ;
 				zombieType = "phone";
 				phone = zombieSpawn.GetComponent<PhoneZombie>();
+
 			}
 			else //create a modern zombie
 			{
@@ -137,7 +142,7 @@ public class ZombieSpawn : MonoBehaviour {
 			break;
 			
 		case "br": //instantiate in top left (since opposite to br), facing east.
-			Debug.Log ("br hit!");
+			//Debug.Log ("br hit!");
 			dir = "E";
 			zombieSpawn.transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
 			
@@ -280,6 +285,10 @@ public class ZombieSpawn : MonoBehaviour {
 
 		zombieSpawn.transform.parent = GameObject.Find ("GeneratedZombies").transform; //put this in a gameobject so its neat
 		
+		
+		detect = Instantiate(detectPrefab) as DetectSurvivor;
+		detect.zombieTransform = zombieSpawn.transform;
+		detect.transform.parent = GameObject.Find ("Detectors").transform;
 	}
 	
 }

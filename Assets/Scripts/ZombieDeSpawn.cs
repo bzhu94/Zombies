@@ -49,7 +49,7 @@ public class ZombieDeSpawn : MonoBehaviour {
 				corner = "tr";
 			}
 			
-			Debug.Log (x + ", " + z + " and the corner was: " + corner);
+			//Debug.Log (x + ", " + z + " and the corner was: " + corner);
 			//Debug.Log ("Gone!");
 			Destroy (zombie); //despawn the zombie...
 			
