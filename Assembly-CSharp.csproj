@@ -51,7 +51,10 @@
      <Compile Include="Assets\Scripts\CornerTurn.cs" />
      <Compile Include="Assets\Scripts\ModernZombie.cs" />
      <Compile Include="Assets\Scripts\PhoneZombie.cs" />
+     <Compile Include="Assets\Scripts\PlayerBehavior.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\ShamblerZombie.cs" />
+     <Compile Include="Assets\Scripts\SurvivorScript.cs" />
      <Compile Include="Assets\Scripts\ZombieConstants.cs" />
      <Compile Include="Assets\Scripts\ZombieDeSpawn.cs" />
      <Compile Include="Assets\Scripts\ZombieInit.cs" />

@@ -1,8 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ModernZombie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SurvivorScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/ModernZombie.cs" Line="257" Column="3" />
+      <File FileName="Assets/Scripts/ZombieSpawn.cs" Line="281" Column="120" />
+      <File FileName="Assets/Scripts/ZombieConstants.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/ZombieDeSpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ZombieInit.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SurvivorScript.cs" Line="20" Column="36" />
+      <File FileName="Assets/Scripts/Rotator.cs" Line="16" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

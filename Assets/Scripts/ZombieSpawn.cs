@@ -30,6 +30,7 @@ public class ZombieSpawn : MonoBehaviour {
 		string dir = "none";
 
 		GameObject zombieSpawn;
+		
 		int rand = Random.Range (0, 100);
 
 		PhoneZombie phone = null;
@@ -276,6 +277,9 @@ public class ZombieSpawn : MonoBehaviour {
 
 			break;
 		}
+
+		zombieSpawn.transform.parent = GameObject.Find ("GeneratedZombies").transform; //put this in a gameobject so its neat
+		
 	}
 	
 }
