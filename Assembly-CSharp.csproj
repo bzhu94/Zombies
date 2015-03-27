@@ -53,8 +53,9 @@
      <Compile Include="Assets\Scripts\PhoneZombie.cs" />
      <Compile Include="Assets\Scripts\ShamblerZombie.cs" />
      <Compile Include="Assets\Scripts\ZombieConstants.cs" />
+     <Compile Include="Assets\Scripts\ZombieDeSpawn.cs" />
      <Compile Include="Assets\Scripts\ZombieInit.cs" />
-     <Compile Include="Assets\Scripts\ZombieSpawnAndDeSpawn.cs" />
+     <Compile Include="Assets\Scripts\ZombieSpawn.cs" />
      <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

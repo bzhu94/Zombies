@@ -92,7 +92,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 
 					transform.position = new Vector3(5.5f, 0, 3.5f); //position zombie so its in correct place
@@ -104,7 +104,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 				transform.position = new Vector3(31.5f, 0, 3.5f);
@@ -116,7 +116,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 					transform.position = new Vector3(5.5f, 0, 17.5f);
@@ -129,7 +129,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 					transform.position = new Vector3(31.5f, 0, 17.5f);
@@ -144,7 +144,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}
 
 				
@@ -157,7 +157,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}
 				
 				transform.position = new Vector3(31.5f, 0, 17.5f);
@@ -169,7 +169,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}
 				
 				transform.position = new Vector3(31.5f, 0, 3.5f);
@@ -182,7 +182,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}
 				
 				transform.position = new Vector3(5.5f, 0, 3.5f);
@@ -204,7 +204,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 					transform.position = new Vector3(4.5f, 0, 2.5f); //position zombie so its in correct place
@@ -216,7 +216,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 				transform.position = new Vector3(32.5f, 0, 2.5f);
@@ -229,7 +229,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 					transform.position = new Vector3(4.5f, 0, 18.5f);
@@ -243,7 +243,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 					transform.position = new Vector3(32.5f, 0, 18.5f);
@@ -257,7 +257,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 					
 					transform.position = new Vector3(4.5f, 0, 2.5f); //position zombie so its in correct place
@@ -269,7 +269,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 					
 					transform.position = new Vector3(32.5f, 0, 2.5f);
@@ -282,7 +282,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 					
 					transform.position = new Vector3(4.5f, 0, 18.5f);
@@ -296,7 +296,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 					
 					transform.position = new Vector3(32.5f, 0, 18.5f);
@@ -318,7 +318,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 				transform.position = new Vector3(3.5f, 0, 1.5f); //position zombie so its in correct place
@@ -330,7 +330,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 			
 			transform.position = new Vector3(33.5f, 0, 1.5f);
@@ -343,7 +343,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 				transform.position = new Vector3(3.5f, 0, 19.5f);
@@ -357,7 +357,7 @@ public class PhoneZombie : MonoBehaviour {
 					if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 					{
 						transform.Rotate(new Vector3(0, 1, 0), 90); //rotate so zombie is looking right way
-						ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+						ZombieDeSpawn.TryDespawn(gameObject);
 					}
 				
 				
@@ -372,7 +372,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.E) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}				
 				transform.position = new Vector3(3.5f, 0, 1.5f); //position zombie so its in correct place
 				dir = direction.E; //make zombie walk right way
@@ -383,7 +383,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.N) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}	
 				
 				transform.position = new Vector3(33.5f, 0, 1.5f);
@@ -396,7 +396,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.S) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}	
 				
 				transform.position = new Vector3(3.5f, 0, 19.5f);
@@ -410,7 +410,7 @@ public class PhoneZombie : MonoBehaviour {
 				if(dir != direction.W) //makes sure zombie isn't rotated multiple times in a turn
 				{
 					transform.Rotate(new Vector3(0, 1, 0), -90); //rotate so zombie is looking right way
-					ZombieSpawnAndDeSpawn.TryDespawn(gameObject);
+					ZombieDeSpawn.TryDespawn(gameObject);
 				}				
 				
 				transform.position = new Vector3(33.5f, 0, 19.5f);

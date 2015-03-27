@@ -7,7 +7,7 @@ public class ZombieConstants : MonoBehaviour {
 	public static float v = 7; //velocity
 	public static int n = 5; //number of zombies
 	public static float p = .5f; //probability of despawning when hits a despawning point
-
+	public static float r = .5f; //probability of selecting a HARD zombie
 
 	public static int modernHitCount = 0;
 	public static int classicHitCount = 0;
